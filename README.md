@@ -3,16 +3,21 @@ Min informatik logbog
 
 # Forløb indtil videre:
 I 1.D har gennemgået flg forløb indtil videre:
-## Grundforløb:
+### Grundforløb:
 App-lab, gestalt love, prototyper, brugertest (think-aloud)
-## Programmering:
+### Programmering:
 Variabler, løkker, kontrolstrukturer (if/else), lister. Sierpinski trekant kode, fysiksimuleringskode
-## Kryptering:
+### Kryptering:
 Symmetrisk vs. Asymmetrisk kryptering, RSA, Caesar.
 
 [Kryptografi](https://informatik.systime.dk/?id=810), [IT sikkerhed](https://informatik.systime.dk/?id=528), [CIA modellen](https://informatik.systime.dk/?id=844), [Basic gennemgang af RSA kryptering](https://www.geeksforgeeks.org/computer-networks/rsa-algorithm-cryptography/)
 
 Vi lavede vist også et lille program til at kryptere/dekryptere beskeder - Der burde være et link til dig program i din logbog. :)
+
+### 3D Design og print
+Fusion, Cura (Creality CR10S-pro), Bambu studio (Bambu lab P2S)
+
+
 
 # Når man får brug for at vide lidt mere om markdown:
 Markdown er den syntaks man bruger på github til at lave readme filer... Den der forkant den betyder at det er en overskrift.
