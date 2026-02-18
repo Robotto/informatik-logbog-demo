@@ -59,3 +59,110 @@ solid cube_corner
   endfacet
 endsolid
 ```
+#WHOAH! GEOJSON er også en ting!
+```geojson
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "properties": {
+        "ID": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+              [-90,35],
+              [-90,30],
+              [-85,30],
+              [-85,35],
+              [-90,35]
+          ]
+        ]
+      }
+    }
+  ]
+}
+```
+
+#Og Mermaid til diagrammer!
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
+```mermaid
+classDiagram
+
+%% =======================
+%% Interfaces
+%% =======================
+
+class AppCallback {
+    <<interface>>
+    + __call__(ax : Axes, objects : list~SpaceObject~) None
+}
+
+%% =======================
+%% Domain Model
+%% =======================
+
+class SpaceObject {
+    + float magnitude
+    + tuple~float,float~ position
+    + tuple~float,float~ velocity
+    + str color
+}
+
+class asteroid_data {
+    + float miss_distance_km
+    + float relative_velocity_kms
+    + float magnitude_m
+    + bool is_hazardous
+}
+
+%% =======================
+%% GUI Layer
+%% =======================
+
+class PlotApp {
+    - plot_function : AppCallback
+    - space_objects : list~SpaceObject~
+    - plot_frame : CTkFrame
+    - fig : Figure
+    - ax : Axes
+    - canvas : FigureCanvasTkAgg
+    - date_entry : CTkEntry
+
+    + generate_plot()
+    + set_space_objects(space_objects : list~SpaceObject~)
+    + on_date_enter(event)
+}
+
+PlotApp --|> CTk
+
+%% =======================
+%% External Classes
+%% =======================
+
+class Axes
+class Figure
+class FigureCanvasTkAgg
+
+%% =======================
+%% Relationships
+%% =======================
+
+PlotApp --> SpaceObject
+PlotApp --> Axes
+PlotApp --> Figure
+PlotApp --> FigureCanvasTkAgg
+
+PlotApp --> AppCallback : uses
+asteroid_data --> SpaceObject : converted to
+```
