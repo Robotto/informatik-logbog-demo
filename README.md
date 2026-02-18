@@ -25,3 +25,37 @@ Markdown er den syntaks man bruger på github til at lave readme filer... Den de
 [Her er et link til at lære om markdown](https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet)
 
 <img width="609" height="611" alt="remember_names" src="https://github.com/user-attachments/assets/97941104-aa55-4f93-90bb-97a8cc1387cf" />
+
+# Jeg tester noget sygt ASCII-STL stuff her:
+```stl
+solid cube_corner
+  facet normal 0.0 -1.0 0.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 1.0 0.0 0.0
+      vertex 0.0 0.0 1.0
+    endloop
+  endfacet
+  facet normal 0.0 0.0 -1.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 0.0 1.0 0.0
+      vertex 1.0 0.0 0.0
+    endloop
+  endfacet
+  facet normal -1.0 0.0 0.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 0.0 0.0 1.0
+      vertex 0.0 1.0 0.0
+    endloop
+  endfacet
+  facet normal 0.577 0.577 0.577
+    outer loop
+      vertex 1.0 0.0 0.0
+      vertex 0.0 1.0 0.0
+      vertex 0.0 0.0 1.0
+    endloop
+  endfacet
+endsolid
+```
