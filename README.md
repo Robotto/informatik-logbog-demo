@@ -16,7 +16,7 @@ Variabler, løkker, kontrolstrukturer (if/else), lister. Sierpinski trekant kode
 console.log("her er en stump kode");
 ```
 
-#HUSK FLOWCHARTS!
+# HUSK FLOWCHARTS!
 
 </details>
 
