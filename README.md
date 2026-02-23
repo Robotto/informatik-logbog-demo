@@ -6,10 +6,19 @@ I 1.D har gennemgået flg forløb indtil videre:
 ### Grundforløb:
 App-lab, gestalt love, prototyper, brugertest (think-aloud)
 ### Programmering:
+
+<details>
+
+<summary>Læs mere om programmering</summary>
+
 Variabler, løkker, kontrolstrukturer (if/else), lister. Sierpinski trekant kode, fysiksimuleringskode
 ```js
 console.log("her er en stump kode");
 ```
+
+#HUSK FLOWCHARTS!
+
+</details>
 
 ### Kryptering:
 Symmetrisk vs. Asymmetrisk kryptering, RSA, Caesar.
